@@ -1,0 +1,115 @@
+.topic {
+  font: bold;
+  font-style: bold;
+  font-size: 30px;
+}
+
+.animated-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  animation: changeText 5s infinite;
+  display: inline-block;
+}
+
+/* Keyframes to change text style continuously */
+@keyframes changeText {
+  0% {
+    color: #3498db;
+    transform: scale(1);
+  }
+  25% {
+    color: #e74c3c;
+    transform: scale(1.2);
+  }
+  50% {
+    color: #2ecc71;
+    transform: scale(1);
+  }
+  75% {
+    color: #f39c12;
+    transform: scale(1.2);
+  }
+  100% {
+    color: #9b59b6;
+    transform: scale(1);
+  }
+}
+.json-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffff;
+  border-radius: 5px;
+  font-size: 16px;
+  white-space: pre-wrap;
+  padding-left: 12px;
+  text-align: left;
+  /* Preserve formatting */
+  word-wrap: break-word;
+  background-color: #ffffff;
+  font-family: "Courier New", monospace;
+}
+code {
+  color: #051c78;
+}
+.btn {
+  margin: 12px;
+}
+.loader {
+  display: flex;
+  gap: 10px;
+}
+
+.loader div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out;
+}
+
+.loader div:nth-child(1) {
+  background-color: red;
+  animation-delay: -0.32s;
+}
+
+.loader div:nth-child(2) {
+  background-color: blue;
+  animation-delay: -0.16s;
+}
+
+.loader div:nth-child(3) {
+  background-color: yellow;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.hid {
+  display: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+/* Ensure navbar stays at the top */
+.navbar {
+    margin-top: 0;  /* Remove top margin */
+    padding-top: 0; /* Remove top padding */
+    position: fixed; /* Keep it fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}

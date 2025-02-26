@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> hed}}
+</head>
+<body>
+
+  {{> lod}} <!-- Loading Animation -->
+
+  <div class="hid">
+    {{> nav}}
+    <div class="content shadow-sm p-2 text-center">
+      <img src="/img/r-api.png" width="400" height="300" class="rounded">
+      <br>
+      <p class="animated-text">
+        Welcome <i>R-API</i>
+      </p>
+      <br>
+      <p>
+        <hr> The R-API development project focuses on creating multiple REST APIs for various services, including Sinhala subtitle movie search and downloads, image searching, and news aggregation. This project aims to provide structured and automated access to useful data through API endpoints.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        R-API is a RESTful API development project that includes multiple services such as movie search and download, image search, and news aggregation. Below are the key APIs that can be developed:
+      </p>
+      <ul type="square">
+        <li>
+          <strong>Sinhala Subtitle Movie API</strong>
+          <br>
+          This API will allow users to search for Sinhala subtitled movies and get download links from different sources. It includes:
+          <ul>
+            <li>Movie Search API: Fetches movie details from IMDB, TMDB, or other databases.</li>
+            <li>Movie Download API 1: Provides direct download links from first-party or third-party sources.</li>
+            <li>Movie Download API 2 (Mega): Offers Mega.nz cloud storage links for downloading movies.</li>
+            <li>Telegram API: Fetches download links from Telegram bots/channels.</li>
+            <li>Pixel API: Provides movie posters or snapshots for reference.</li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <strong>Image Search API</strong>
+          <br>
+          Uses Google Images, Unsplash, or other services to fetch images.
+          <ul>
+            <li>Includes filtering options like size, type, and color.</li>
+            <li>Provides direct download links for images.</li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <strong>News API</strong>
+          <br>
+          Aggregates Sinhala news from different sources.
+          <ul>
+            <li>Provides trending/breaking news with categorized filters.</li>
+            <li>Uses RSS feeds, web scraping, or third-party news APIs to fetch real-time updates.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="text-center">
+      <a href="/DOC">
+        <button class="btn btn-outline-primary">
+          DOCS
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <script src="/script.js"></script> <!-- Link to JavaScript file -->
+
+</body>
+{{> sl}}
+</html>
